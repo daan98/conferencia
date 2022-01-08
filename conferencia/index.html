@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>GdlWebCamp</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="social-networks">
+            <a href="" class="white"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="white"><i class="fab fa-twitter"></i></a>
+            <a href="" class="white"><i class="fab fa-pinterest-p"></i></a>
+            <a href="" class="white"><i class="fab fa-youtube"></i></a>
+            <a href="" class="white"><i class="fab fa-instagram"></i></a>
+        </nav>
+    
+        <div class="conference-information center">
+            <div class="date white">
+                <i class="fas fa-calendar-alt orange"></i>
+                <p>10-12 Dic</p>
+            </div>
+    
+            <div class="location white">
+                <i class="fas fa-map-marker-alt orange"></i>
+                <p>GUADALAJARA, MX</p>
+            </div>
+    
+            <div class="promotion white">
+                <h1 class="center">GdlWebCamp</h1>
+                <p>La mejor conferencia de <span>diseño web</span></p>
+            </div>
+        </div>
+    </header>
+    
+    <div class="menu-container">
+        <nav class="container menu">
+            <div class="logo-container">
+                <a href="index.html"><img src="img/logo.svg" alt="Logo GDLWEBCAMP"></a>
+            </div>
+            <div>
+                <a href="javascript:void(0);" class="center bars" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+                <a href="javascript:void(0);" id="quit" class="center" onclick="closeMenu()"><i class="fas fa-times"></i></a>
+                <div id="link" class="menu-options center">
+                    <a class="center" href="conferencia.html">Conferencia</a>
+                    <a class="center" href="calendario.html">Calendario</a>
+                    <a class="center" href="invitados.html">Invitados</a>
+                    <a class="center" href="galeria.html">Galer&iacute;a</a>
+                    <a class="center" href="reservacion.html">Reservaciones</a>
+                </div>  
+            </div>
+        </nav>
+    </div>
+
+    <section class="container">
+        <h2 class="center">La mejor conferencia de diseño web</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi adipisci, modi, eaque dolorem qui soluta blanditiis asperiores consequuntur ratione optio, tenetur amet numquam ipsum at aut dolorum. Eos, velit consectetur?</p>
+    </section>
+
+    <section class="program">
+        <div class="video-container">
+            <video autoplay loop poster="img/bg-talleres.jpg">
+                <source src="video/video.mp4" type="video/mp4">
+                <source src="video/video.webm" type="video/webm">
+                <source src="video/video.ogv" type="video/ogg">
+            </video>
+        </div>
+
+        <div class="program-container">
+            <h2 class="center">Programa del evento</h2>
+
+            <div class="program-menu-container">
+                <a href="#talleres" class="active"><i class="fas fa-code orange"></i> Talleres</a>
+                <a href="#conferencias"><i class="fas fa-comments orange"></i> Conferencias</a>
+                <a href="#seminarios"><i class="fas fa-university orange"></i> Seminarios</a>
+            </div>
+
+            <div class="program-info-container">
+                <div id="talleres" class="hide">
+                    <div class="program-info">
+                        <h3 class="orange center h3-program">HTML5, CSS3 y JavaScript</h3>
+                        <p><i class="fas fa-clock orange"></i> 14:00 hrs</p>
+                        <p><i class="fas fa-calendar-alt orange"></i> 10 de Dic</p>
+                        <p><i class="fas fa-user orange"></i> Daniel Antonio Agüero Núñez</p>
+                    </div>
+
+                    <div class="program-info">
+                        <h3 class="orange center h3-program">Responsive Web Design</h3>
+                        <p><i class="fas fa-clock orange"></i> 10:00 hrs</p>
+                        <p><i class="fas fa-calendar-alt orange"></i> 10 de Dic</p>
+                        <p><i class="fas fa-user orange"></i> Daniel Antonio Agüero Núñez</p>
+                    </div>
+                </div>
+
+                <div id="conferencias" class="hide">
+                    <div class="program-info">
+                        <h3 class="orange center h3-program">B&aacute;sicos de Angular</h3>
+                        <p><i class="fas fa-clock orange"></i> 14:00 hrs</p>
+                        <p><i class="fas fa-calendar-alt orange"></i> 10 de Dic</p>
+                        <p><i class="fas fa-user orange"></i> Daniel Antonio Agüero Núñez</p>
+                    </div>
+
+                    <div class="program-info">
+                        <h3 class="orange center h3-program">B&aacute;sicos de React</h3>
+                        <p><i class="fas fa-clock orange"></i> 16:00 hrs</p>
+                        <p><i class="fas fa-calendar-alt orange"></i> 11 de Dic</p>
+                        <p><i class="fas fa-user orange"></i> Daniel Antonio Agüero Núñez</p>
+                    </div>
+                </div>
+
+                <div id="seminarios" class="hide">
+                    <div class="program-info">
+                        <h3 class="orange center h3-program">Freelancer en tiempos de cuarentena</h3>
+                        <p><i class="fas fa-clock orange"></i> 10:00 hrs</p>
+                        <p><i class="fas fa-calendar-alt orange"></i> 11 de Dic</p>
+                        <p><i class="fas fa-user orange"></i> Daniel Antonio Agüero Núñez</p>
+                    </div>
+
+                    <div class="program-info">
+                        <h3 class="orange center h3-program">Sobrevivir al Home Office</h3>
+                        <p><i class="fas fa-clock orange"></i> 12:00 hrs</p>
+                        <p><i class="fas fa-calendar-alt orange"></i> 11 de Dic</p>
+                        <p><i class="fas fa-user orange"></i> Daniel Antonio Agüero Núñez</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button white float-right">Ver Todos</a>
+        </div>
+    </section>
+
+    <section class="container guests ">
+        <h2 class="center">Nuestros invitados</h2>
+
+        <div class="guests-container">
+            <div class="block center guests-info">
+                <img src="img/invitado1.jpg" alt="Imagen Invitado 1">
+                <p class="orange center">Rafael Bautista</p>
+            </div>
+            <div class="block center guests-info">
+                <img src="img/invitado2.jpg" alt="Imagen Invitado 2">
+                <p class="orange center">Shari Herrera</p>
+            </div>
+            <div class="block center guests-info">
+                <img src="img/invitado3.jpg" alt="Imagen Invitado 3">
+                <p class="orange center">Gregorio Sánchez</p>
+            </div>
+            <div class="block center guests-info">
+                <img src="img/invitado4.jpg" alt="Imagen Invitado 4">
+                <p class="orange center">Susana Rivera</p>
+            </div>
+            <div class="block center guests-info">
+                <img src="img/invitado5.jpg" alt="Imagen Invitado 5">
+                <p class="orange center">Harold García</p>
+            </div>
+            <div class="block center guests-info">
+                <img src="img/invitado6.jpg" alt="Imagen Invitado 6">
+                <p class="orange center">Susan Sánchez</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="center general-information">
+        <div class="information">
+            <h1 class="orange number center"></h1><!--6-->
+            <p>Invitados</p>
+        </div>
+        <div class="information">
+            <h1 class="orange number center"></h1><!--15-->
+            <p>Talleres</p>
+        </div>
+        <div class="information">
+            <h1 class="orange number center"></h1><!--3-->
+            <p>Días</p>
+        </div>
+        <div class="information">
+            <h1 class="orange number center"></h1><!--9-->
+            <p>Conferencias</p>
+        </div>
+    </section>
+
+    <section class="price">
+        <h2 class="center">Precios</h2>
+        <div class="center price-information-container">
+            <div class="price-information">
+                <p class="orange">Pase por un día</p>
+                <h1 class="number center">$30</h1>
+                <p><i class="fas fa-check"></i> Bocadillos Gratis</p>
+                <p><i class="fas fa-check"></i> Todas las conferencias</p>
+                <p><i class="fas fa-check"></i> Todos los talleres</p>
+                <button class="button hollow">Comprar</button>
+            </div>
+            <div class="price-information">
+                <p class="orange">Todos los días</p>
+                <h1 class="number center">$50</h1>
+                <p><i class="fas fa-check"></i> Bocadillos gratis</p>
+                <p><i class="fas fa-check"></i> Todas las conferencias</p>
+                <p><i class="fas fa-check"></i> Todos los telleres</p>
+                <button class="button">Comprar</button>
+            </div>
+            <div class="price-information">
+                <p class="orange">Pase por dos días</p>
+                <h1 class="number center">$45</h1>
+                <p><i class="fas fa-check"></i> Bocadillos gratis</p>
+                <p><i class="fas fa-check"></i> Todas las conferencias</p>
+                <p><i class="fas fa-check"></i> Todos los talleres</p>
+                <button class="button hollow">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="map"></section>
+
+    <section class="testimonial container">
+        <h2 class="center">Testimoniales</h2>
+        <div class="testimonial-information-container">
+            <div class="testimonial-information">
+                <div class="comment"> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, numquam, qui, porro modi vero unde praesentium similique dicta quaerat provident natus. Ut velit, explicabo provident quas ratione consectetur
+                    voluptates rem?</div>
+                <div class="comment-information">
+                    <div class="comment-information-img">
+                        <img src="img/testimonial.jpg" alt="">
+                    </div>
+                    <div class="comment-information-text">
+                        <h4 class="orange center">Oswaldo Aponte Escobedo</h4>
+                        <p>Diseñador en @prisma</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-information">
+                <div class="comment"> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, numquam, qui, porro modi vero unde praesentium similique dicta quaerat provident natus. Ut velit, explicabo provident quas ratione consectetur
+                    voluptates rem?</div>
+                <div class="comment-information">
+                    <div class="comment-information-img">
+                        <img src="img/testimonial.jpg" alt="">
+                    </div>
+                    <div class="comment-information-text">
+                        <h4 class="orange center">Oswaldo Aponte Escobedo</h4>
+                        <p>Diseñador en @prisma</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-information">
+                <div class="comment"> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, numquam, qui, porro modi vero unde praesentium similique dicta quaerat provident natus. Ut velit, explicabo provident quas ratione consectetur
+                    voluptates rem?</div>
+                <div class="comment-information">
+                    <div class="comment-information-img">
+                        <img src="img/testimonial.jpg" alt="">
+                    </div>
+                    <div class="comment-information-text">
+                        <h4 class="orange center">Oswaldo Aponte Escobedo</h4>
+                        <p>Diseñador en @prisma</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sign-up">
+        <div class="center sign-up-detail">
+            <p class="white">Registrate al newsletter</p>
+            <h1 class="white center">GdlWebCamp</h1>
+            <a href="#" class="button hollow">Registro</a>
+        </div>
+    </section>
+
+    <section class="time-up container">
+        <h2 class="center">Faltan</h2>
+        <div class="clock">
+            <p class="center"><span class="orange block" id="day"></span> Días</p>
+            <p class="center"><span class="orange block" id="hour"></span> Horas</p>
+            <p class="center"><span class="orange block" id="minute"></span> Minutos</p>
+            <p class="center"><span class="orange block" id="seconds"></span> Segundos</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-detail container">
+            <div class="about">
+                <h3 class="white center">Sobre <span class="orange">GdlWebCamp</span></h3>
+                <p class="white center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut, pariatur itaque magni cum neque et voluptas cumque, consequatur voluptatum provident? Totam tenetur reprehenderit veniam blanditiis. Maiores, blanditiis nam. Dicta.</p>
+            </div>
+            <div class="tweets">
+                <h3 class="white center">Últimos <span class="orange">Tweets</span></h3>
+                <p class="white center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita <span class="orange">#GWC</span>, autem nemo id saepe at doloremque.</p>
+                <p class="white center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit totam accusantium commodi non temporibus <span class="orange">#GWC</span>.</p>
+                <p class="white center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni expedita dolore perferendis praesentium autem voluptate. <span class="orange">@GDLWebCamp</span></p>
+            </div>
+            <div class="social">
+                <h3 class="white center">Redes <span class="orange">Sociales</span></h3>
+                <nav class="social-networks">
+                    <a href="" class="white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="white"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="white"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="" class="white"><i class="fab fa-youtube"></i></a>
+                    <a href="" class="white"><i class="fab fa-instagram"></i></a>
+                </nav>
+            </div>
+        </div>
+        <div class="center copyrigth">
+            <p class="white">Todos los derechos reservados GdlWebCamp 2020</p>
+        </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script><script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script src="js/plugin/jquery.animateNumber.min.js"></script>
+<script src="js/plugin/jquery.countdown.min.js"></script>
+<script src="js/plugin/jquery.lettering.js"></script>
+<script src="js/plugin/lightbox.min.js"></script>
+<script src="js/function.js"></script>
+</html>
