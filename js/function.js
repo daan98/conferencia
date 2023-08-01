@@ -21,7 +21,7 @@ L.marker([17.994576, -92.952742]).addTo(map)
     .openPopup();
 
 // FUNCIÓN CUENTA REGRESIVA ***JAVASCRIPT***
-let countDown = new Date("Oct 15, 2022 00:00:00").getTime();
+let countDown = new Date("Dec 10, 2023 00:00:00").getTime();
 
 let x = setInterval(function() {
     let now = new Date().getTime();
