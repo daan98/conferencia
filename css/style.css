@@ -141,7 +141,7 @@ header {
 
 .social-networks {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 40px;
 }
 
