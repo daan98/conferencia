@@ -122,7 +122,11 @@ p {
 
 p.orange,
 p:nth-child(4) {
-    margin: 20px 0;
+    margin: 10px 0;
+}
+
+.dia p {
+    margin: 10px 0;
 }
 
 .float-right {
@@ -165,6 +169,7 @@ header {
 .location {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .date p,
@@ -234,6 +239,11 @@ header {
 .logo-container,
 .logo-container a {
     max-width: 86%;
+}
+
+.logo-container {
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 
