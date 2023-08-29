@@ -536,7 +536,7 @@ section.container {
 
 /** REGISTRO **/
 
-#error {
+#error-name, #error-last-name, #error-email {
     display: none;
 }
 
